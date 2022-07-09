@@ -5,6 +5,6 @@ Studying Python
 
 ### Day 1: Progress
 
-Completed Parts *1-4* 
+Completed Parts **1-4** 
 
 ### Day 2: 
