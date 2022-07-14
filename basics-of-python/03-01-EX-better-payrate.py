@@ -1,5 +1,5 @@
 # Welcome phrase
-user_inp = input("Hi! Do you want to calculate your payrate?\nY or N")
+user_inp = input("Hi! Do you want to calculate your payrate?\nY or N\n")
 if user_inp == 'y': 
     work_hours = -1.0
     
