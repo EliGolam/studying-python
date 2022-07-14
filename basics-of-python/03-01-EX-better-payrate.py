@@ -7,7 +7,17 @@ if user_inp == 'y':
         user_inp = input("Please enter a positive number in digits.\nEnter Hours worked per day: ")
         try:
             work_hours = float (user_inp)
-            if work_hours > 0 : print("Great !!\n\n")
+            if work_hours > 0 : 
+                print("Great !!\n\n")
+                if work_hours*7 > 40 :
+                    work_hours_above_40 = work_hours*7 - 40
+                    work_hours_under_40 = 40.0
+                else :
+                    work_hours_under_40 = work_hours*7
+                    work_hours_above_40 = 0
+            # print(work_hours_above_40)
+            # print(work_hours_under_40)
+
         except:
             print("Please enter a number")
     
@@ -20,7 +30,8 @@ if user_inp == 'y':
         except:
             print("Please enter a number")
 
-    print("You earn ", work_hours*pay_per_hour, " buckaroonies every day! Nice")
+    pay_per_week = (work_hours_under_40*pay_per_hour) + (work_hours_above_40*pay_per_hour*1.5)
+    print("You earn ", pay_per_week ," buckaroonies every week! Nice")
 
 else :
     print("Okay! Have a nice day!")
