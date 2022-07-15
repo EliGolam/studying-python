@@ -17,3 +17,8 @@ I learned how to navigate through VSCode Terminal, Windows' Command Prompt and W
 Conditional Execution: **if/else**  
 More Conditional Structures: **if/elif/else**, **try/except**  
 
+### Day 4: 15/07/2022
+
+Python Functions  
+Build your own functions
+
