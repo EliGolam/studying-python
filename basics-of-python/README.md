@@ -8,3 +8,6 @@ Exercises and Practice
 
 Rewrite payrate computation to give employees 1.5 times the hourly rate for hours worked above 40 hours.
 
+### 04-06-EX
+
+Rewrtie payrate code with functions

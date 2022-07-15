@@ -2,7 +2,6 @@
 user_inp = input("Hi! Do you want to calculate your payrate?\nY or N\n")
 if user_inp == 'y': 
     work_hours = -1.0
-    
     # Calculating work hours per week from user input 
     while work_hours < 0 :
         user_inp = input("Please enter a positive number in digits.\nEnter Hours worked per day: ")
