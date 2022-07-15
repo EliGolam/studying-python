@@ -14,14 +14,14 @@ def computepay (hours, rate) :
 def verify_user_input (assign, input_value) :
     try:
         assign = float (input_value)
-        if assign > 0 :
-            print("Great !!\n\n")
-            return assign
-        else :
-            print("Please enter a positive number")
-            return -1.0
     except :
         print("Please enter a number\n")
+        return -1.0
+    if assign > 0 :
+            print("Great !!\n\n")
+            return assign
+    else :
+        print("Please enter a positive number")
         return -1.0     
         
 
