@@ -11,3 +11,7 @@ Rewrite payrate computation to give employees 1.5 times the hourly rate for hour
 ### 04-06-EX
 
 Rewrtie payrate code with functions
+
+### Practice
+
+Largest Number
