@@ -1,7 +1,3 @@
-# 06 STRINGS
-s1 = "Apple"
-printStringBackwards_1(s1)
-
 # Exercise 1: 
 ## Write a while loop that starts at the last character in the string and works its way backwards to the first character in the string, 
 ## printing each letter on a separate line, except backwards. 
@@ -15,6 +11,12 @@ def printStringBackwards_1 (s: str) :
         # step
         index -= 1
     return None
+
+
+# 06 STRINGS
+s1 = "Apple"
+printStringBackwards_1(s1)
+
 
 
 
