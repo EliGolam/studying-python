@@ -57,5 +57,20 @@ print(f"Average Spam Confidence: {sum(dspam_list) / len(dspam_list)}")
 file_handle.close()
 
 """
-Exercise 3: Sometimes when programmers get bored or want to have a bit of fun, they add a harmless Easter Egg to their program. Modify the program that prompts the user for the file name so that it prints a funny message when the user types in the exact file name “na na boo boo”. The program should behave normally for all other files which exist and don’t exist. 
+Exercise 3: Sometimes when programmers get bored or want to have a bit of fun, they add a harmless Easter Egg to their program. Modify the program that prompts the user for the 
+file name so that it prints a funny message when the user types in the exact file name “na na boo boo”. The program should behave normally for all other files which exist and don’t exist. 
 """
+f_inp = input("Please enter the name of the file you are looking for: ")
+try: 
+    f_handle = open(f_inp)
+except:
+    if f_inp == 'poop' : 
+        print("Nice")
+    else:
+        print(f"File cannot be opened: {f_inp}")
+    exit()
+
+count_lines = 0
+for line in f_handle : 
+    count_lines += 1
+print(f"There are {count_lines} lines in {f_inp}")
