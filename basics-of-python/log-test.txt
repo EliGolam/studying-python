@@ -1,0 +1,58 @@
+
+Method 1: CharsInString
+
+Number of "t": 3
+Number of "h": 1
+Number of "i": 4
+Number of "s": 5
+Number of "a": 4
+Number of "r": 3
+Number of "n": 3
+Number of "d": 2
+Number of "o": 3
+Number of "m": 2
+Number of "g": 1
+Number of "b": 1
+Number of "e": 3
+Number of "p": 1
+Number of "w": 1
+Number of "y": 1
+
+Method 2: CharsInStringAlt
+
+Number of "t": 3
+Number of "h": 1
+Number of "i": 4
+Number of "s": 5
+Number of "a": 4
+Number of "r": 3
+Number of "n": 3
+Number of "d": 2
+Number of "o": 3
+Number of "m": 2
+Number of "g": 1
+Number of "b": 1
+Number of "e": 3
+Number of "p": 1
+Number of "w": 1
+Number of "y": 1
+
+Method 3: CharsInStringGet
+{'t': 3, 'h': 1, 'i': 4, 's': 5, 'a': 4, 'r': 3, 'n': 3, 'd': 2, 'o': 3, 'm': 2, 'g': 1, 'b': 1, 'e': 3, 'p': 1, 'w': 1, 'y': 1}
+
+Number of "t": 3
+Number of "h": 1
+Number of "i": 4
+Number of "s": 5
+Number of "a": 4
+Number of "r": 3
+Number of "n": 3
+Number of "d": 2
+Number of "o": 3
+Number of "m": 2
+Number of "g": 1
+Number of "b": 1
+Number of "e": 3
+Number of "p": 1
+Number of "w": 1
+Number of "y": 1

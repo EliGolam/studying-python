@@ -1,0 +1,56 @@
+Word "but" is present once
+Word "soft" is present once
+Word "what" is present once
+Word "light" is present once
+Word "through" is present once
+Word "yonder" is present once
+Word "window" is present once
+Word "breaks" is present once
+Word "it" is present once
+Word "is" is present 3 times
+Word "the" is present 3 times
+Word "east" is present once
+Word "and" is present 3 times
+Word "juliet" is present once
+Word "sun" is present 2 times
+Word "arise" is present once
+Word "fair" is present once
+Word "kill" is present once
+Word "envious" is present once
+Word "moon" is present once
+Word "who" is present once
+Word "already" is present once
+Word "sick" is present once
+Word "pale" is present once
+Word "with" is present once
+Word "grief" is present once
+
+
+Alphabetically ordered dictionary
+
+already: appears once
+and: appears 3 times
+arise: appears once
+breaks: appears once
+but: appears once
+east: appears once
+envious: appears once
+fair: appears once
+grief: appears once
+is: appears 3 times
+it: appears once
+juliet: appears once
+kill: appears once
+light: appears once
+moon: appears once
+pale: appears once
+sick: appears once
+soft: appears once
+sun: appears 2 times
+the: appears 3 times
+through: appears once
+what: appears once
+who: appears once
+window: appears once
+with: appears once
+yonder: appears once

@@ -1,4 +1,5 @@
 # LEARING
+import sys
 
 """
 Open a file and count the number of lines
@@ -50,7 +51,7 @@ string_search = 'X-DSPAM-Confidence: '
 dspam_list = []
 file_handle = open('mbox.txt')
 for line in file_handle :
-    if line.find(string_search) == -1 : continue
+    if not string_search in line : continue
     line = line.rstrip()
     dspam_list.append(float(line.partition(string_search)[2]))
 print(f"Average Spam Confidence: {sum(dspam_list) / len(dspam_list)}")
@@ -68,7 +69,7 @@ except:
         print("Nice")
     else:
         print(f"File cannot be opened: {f_inp}")
-    exit()
+    sys.exit()
 
 count_lines = 0
 for line in f_handle : 
