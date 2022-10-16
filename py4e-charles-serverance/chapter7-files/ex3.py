@@ -42,5 +42,9 @@ for line in fhandle:
 # Close File
 fhandle.close()
 
-log = f"There are {countLines} in {fileNameInp}.\nThe number of non-empty lines is: {writtenLines}"
+log = f'There are {countLines} in "{fileNameInp}".\nThe number of non-empty lines is: {writtenLines}'
 print(log)
+
+logFile = open(logFileName, 'w')
+logFile.write(log)
+logFile.close()
