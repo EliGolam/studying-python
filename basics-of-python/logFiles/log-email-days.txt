@@ -1,0 +1,9 @@
+Calculate Email amount for each day of the week
+
+Mon: 299 Emails
+Tue: 372 Emails
+Wed: 292 Emails
+Thu: 392 Emails
+Fri: 315 Emails
+Sat: 61 Emails
+Sun: 66 Emails

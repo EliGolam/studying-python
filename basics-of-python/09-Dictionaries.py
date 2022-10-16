@@ -1,4 +1,8 @@
+from fileinput import filename
 import sys
+import string
+from tkinter.messagebox import NO
+
 """
 Dictionary examples
 """
@@ -141,3 +145,91 @@ for key in listKeys:
     romeoLog.write(line)
 
 romeoLog.close()
+
+"""
+Advanced text parsing:
+Dealing with punctuation
+"""
+print(string.punctuation)
+testStr = "Wowie33e33e!!??@"
+parsedTestStr = testStr.translate(testStr.maketrans('', '', string.punctuation))
+print(parsedTestStr)
+
+fileName = './txtfiles/romeoPunct.txt'
+try:
+    romeoReal = open(fileName)
+except:
+    print(f'File not found: {fileName}')
+    sys.exit()
+
+romeoDict.clear() # Clear dictionary
+print('romeoDict', romeoDict)
+
+for line in romeoReal:
+    line = line.translate(line.maketrans('', '', string.punctuation)) # remove punctuation
+    line = line.rstrip().lower() # strip blank space + to lower case 
+
+    wordsInLine = line.split()
+    for word in wordsInLine:
+        romeoDict[word] = romeoDict.get(word, 0) + 1
+
+print('romeoDict', romeoDict)
+
+romeoReal.close()
+
+fileName = './txtfiles/romeoLog2'
+romeoLog = open(fileName, 'w')
+
+for key in romeoDict:
+
+    line = f'"{key}" appears {romeoDict[key]} times\n' if romeoDict[key] != 1 else f'"{key}" appears once\n'
+    romeoLog.write(line)
+
+"""In Alphabetical Order"""
+keys = list(romeoDict.keys())
+keys.sort()
+
+romeoLog.write('\n\nIn Alphabetical Order\n')
+
+for key in keys: 
+    line = f'"{key}" appears {romeoDict[key]} times\n' if romeoDict[key] != 1 else f'"{key}" appears once\n'
+    romeoLog.write(line)
+
+romeoLog.close()
+
+
+
+"""
+LESSON
+"""
+def findMostFreqWord ():
+    bigWord = None
+    bigCount = None
+
+    inpFileName = input('Enter a file name: ')
+
+    try:
+        fhandle = open(inpFileName)
+    except:
+        print(f'File {inpFileName} Not Found')
+        return None
+
+    countDict = dict()
+
+    for line in fhandle:
+        words = line.rstrip().split()
+        for word in words:
+            countDict[word] = countDict.get(word, 0) + 1
+
+    fhandle.close()
+
+    for word, count in countDict.items():
+        if bigCount is None or count > bigCount: 
+            bigCount = count
+            bigWord = word
+
+    return [bigWord, bigCount]
+
+
+big = findMostFreqWord()
+print(f'{big[0]} appears {big[1]} times')
