@@ -32,7 +32,7 @@ for line in fhandle:
   line = line.rstrip()
   if line.find(findModule) == -1: continue # Guard clause
 
-  logFile.write(f"{line}\n")
+  # logFile.write(f"{line}\n")
   spamConfidence = float(line.split(': ')[1])
   spamConfidenceArray.append(spamConfidence)
 
