@@ -37,3 +37,39 @@ def openFile(folderPath: str, fileFormat: str):
         sys.exit()
   # End WHILE
   return fhandle
+
+
+
+def getNumberInput():
+  nums = []
+
+  isDone = False
+
+  while not isDone: 
+    newNum = input("Type a number to add to array or 'done' if you want to stop: ")
+
+    if (newNum.lower().strip() == 'done'):
+      isDone = True
+    elif (newNum.isnumeric()):
+      nums.append(int(newNum))
+    else: 
+      print("That was not a number")
+  # End WHILE
+
+  return nums
+
+
+def getArrayInfo(array: list, property: str): 
+  property = property.lower()
+
+  if (property == 'max'):
+    return max(array)
+  elif (property == 'min'): 
+    return min(array)
+  elif (property == 'length'): 
+    return len(array)
+  elif (property == 'average'): 
+    return round(sum(array) / len(array), 2)
+  else: 
+    print("Not valid property")
+    return None
