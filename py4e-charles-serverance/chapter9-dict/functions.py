@@ -1,5 +1,5 @@
 def openFile(path: str, format: str):
-  fileNameInp = input("Enter file name: ")
+  fileNameInp = input("Enter file name: ").strip().lower()
 
   if format not in fileNameInp:
     fileNameInp += format

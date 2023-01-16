@@ -32,7 +32,7 @@ for line in fhandle:
 fhandle.close()
 
 
-
+# LOG FILE
 logFile = open(LOG_FILE, 'w')
 print("Logging results")
 
